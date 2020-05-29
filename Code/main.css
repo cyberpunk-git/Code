@@ -1,5 +1,17 @@
 header{
-    display: inline-block;
-    margin-right: 20px;
+    z-index: 99;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    vertical-align: top;
+    text-transform: uppercase;
+}
+
+li{
+    display:inline-block;
+    margin-right: 10px;
 
 }
