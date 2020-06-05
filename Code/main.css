@@ -1,17 +1,43 @@
-header{
-    z-index: 99;
+.mainbar{
+    line-height: 50px;
 }
 
-ul{
-    margin: 0px;
-    padding: 0px;
+.logo{
+    display: inline-block;
+    float: left;
+    line-height: normal;
+}
+
+.title{
+    background-color: lightgreen;
+
+}
+
+funbar{
     float: right;
-    vertical-align: top;
-    text-transform: uppercase;
+    display: inherit;
 }
 
-li{
+.funlist>li>a:hover{
+    color: deepskyblue;
+}
+
+
+.funlist>li{
     display:inline-block;
-    margin-right: 10px;
-
+    margin-right: 0;
+    padding: 10px;
+    text-decoration: none;
+    color:black;
+    line-height: normal;
 }
+
+.funlist{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 3px;
+    line-height: 100%;
+    float: left
+}
+
