@@ -2,9 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>contactus</title>
+    <title>Birds Eye View: blog</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
+<div class="titleBar">
+    <div class="logo">
+        <a href="home.html">
+            <h2>Bird Eye View</h2>
+        </a>
+    </div>
+    <div class="logo">
+        <h5>Time to Travel Around the World</h5>
+    </div>
+    <div class="funbar">
+        <ul class="funList">
+            <li>
+                <a href = "contactUs.html" class="list_header">CONTACT US</a>
+            </li>
+            <li>
+                <a href = "travelTips.html" class="list_header">TIPS</a>
+            </li>
+            <li>
+                <a href = "blog.html" class="list_header">BLOG</a>
+            </li>
 
+            <li>
+                <a href="home.html" class="list_header">HOME</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div style="clear: both">
+</div>
+
+<article style="padding: 40px">
+    <header><h1>Welcome page</h1></header>
+    <img src="picture/welcome.png"><br>
+    <span id="response1">Like</span>
+    <span id="response2">Dislike</span>
+</article>
+
+<footer style="text-align: center;height: 50px;margin-top: 40px;background: black">
+    <a href="contactUs.html" style="color: white">Feedback</a>
+</footer>
+<script>
+    function clickAction1() {
+        if response1.classList.contains("clicked"){
+            response1.classList.remove("clicked");
+            responese2.classList.remove("block");
+        }else{
+            if response2.classList.contains("clicked"){
+            }else{
+                response1.classList.add('clicked');
+                response2.classList.add("block")
+            }
+        }
+    }
+
+    function clickAction2() {
+        if response1.classList.contains("clicked"){
+            response1.classList.remove("clicked");
+            responese2.classList.remove("block");
+        }else{
+            if response2.classList.contains("clicked"){
+            }else{
+                response2.classList.add('clicked');
+                response1.classList.add("block")
+            }
+        }
+    }
+
+    response1.onclick = clickAction1();
+    response2.onclick = clickAction2();
+</script>
 </body>
 </html>
